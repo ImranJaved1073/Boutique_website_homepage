@@ -1,17 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import TreasureTroves from './treasuretroves';
-import GoyardGazette  from './GoyardGazette';
-import Bags from './bags';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home';
 function App() {
   return (
-    <switch>
-    <Bags></Bags>
-    <TreasureTroves/>
-    <GoyardGazette/>
-    </switch>
+ <Home></Home>
   );
 }
 
 export default App;
+

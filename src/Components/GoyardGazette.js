@@ -1,12 +1,15 @@
 import React from "react";
-import "./GoyardGazette.css"; // Custom styles
+import "../GoyardGazette.css"; // Custom styles
+import PersonalizeButton from "./PersonalizeButton";
 
 const GoyardGazette = () => {
     return (
         <div className="container">
             <div className="gazette-container">
                 <div className="row align-items-center">
+
                     {/* Left Section */}
+
                     <div className="col-lg-4 col-md-6 offset-lg-2 gazette-left">
                         <h1 className="gazette-title">The Goyard Gazette</h1>
                         <p className="gazette-subtitle">
@@ -20,13 +23,12 @@ const GoyardGazette = () => {
                                 placeholder="Your email address"
                                 required
                             />
-                            <button type="submit" className="btn submit-btn">
-                                Submit
-                            </button>
+                           <PersonalizeButton dataElement="Submit" url="www.google.com" colore="black" />
                         </form>
                     </div>
 
                     {/* Right Section */}
+                    
                     <div className="col-lg-6 col-md-6 text-center">
                         <img
                             src="/images/GOYARD_blocgazette_V4-1-260x335_2.gif"
